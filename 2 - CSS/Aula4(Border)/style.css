@@ -1,0 +1,23 @@
+body {
+    background: #b1b1b1;
+}
+
+p {
+    color: rgb(53, 49, 49);
+}
+
+.foto-principal {
+    width: 200px;
+
+    /*EXISTEM DOIS TIPOS DE ESCREVER BORDAS*/
+    /*LONGO*/
+    /*border-width: 5px;
+    border-style: solid;
+    border-color: black;*/
+     /*BREVE*/
+    border: 2px solid #ffffff; /*expessura tipo cor -- modelo shorthand*/
+
+    border-radius: 50%; /*bordas redondas*/
+
+
+}

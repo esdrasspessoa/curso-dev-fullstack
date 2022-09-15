@@ -1,0 +1,23 @@
+body {
+    background: gray;
+}
+
+/*.verde {
+    color: green;
+}
+
+/*ou*/
+
+h3 {
+    color: green;
+}
+
+/*sendo assim, se tiver mais uma tag "h3" ela vai receber a mesma propriedade e valor */
+
+.foto {
+    width: 200px;
+}
+
+#titulo-principal {
+    color: yellow;
+}

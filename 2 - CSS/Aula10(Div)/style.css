@@ -1,0 +1,39 @@
+body {
+    background: #b1b1b1;
+    font-family: 'Raleway', sans-serif;;/*FONTE DO TEXTO*/
+    color: rgb(18 17 17);
+}
+
+.conteiner {
+    width: 700px;
+    margin: 0 auto; /*USADO PARA FAZER CENTRALIZAÇÃO, NESSE CASO, DA DIV*/
+}
+
+.foto-principal {
+    width: 200px;
+    border: 2px solid #ffffff; /*expessura tipo cor -- modelo shorthand*/
+    border-radius: 50%; /*bordas redondas*/
+    /*margin: 30px 30px 30px 30px; /*shorterhand -- top right bottom left */
+    margin: 30px; /*para valores todos iguas voce simplifica em um só*/
+    
+    box-shadow: 0px 0px 20px #000000; /*espaçamentohorizon espalamentovert opacidade cor *//*sombra*/
+}
+
+h1{
+    margin-bottom: 0px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+}
+
+h2{
+    margin-top: 0px;
+    font-style: italic; /*ESTILO DA FONTE*/
+    color: #4c4c4c;
+    font-weight: 100;/*EXPESSURA DA FONTE*/
+    letter-spacing: -2px;/*ESPAÇAMENTO DA LETRA*/
+}
+
+p{
+    line-height:25px;/*espaçamento entre linhas */
+}
+
