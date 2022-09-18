@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*ele reseta todas as tags possiveis, permitindo voce alterar por si so*/
+}
+
+html, body {        
+    height: 100%;
+    /*essa regra foi aplica pq, quando selecionamos o degrade, o css so vai querer aplicar na imagem, ele interpetra a tela, so como aquela iamgem. Então temos que dizer pra que a altura é 100% da tela.*/
+}
+
+body {
+    background: rgb(12,15,14);
+    background: linear-gradient(0deg, rgba(12,15,14,1) 0%, rgba(109,109,115,1) 100%);
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    background-attachment: fixed;
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-size:16px;
+}
+
+h5 {
+    text-align: center;
+    margin: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0; 
+}
+
+.social img { /*explicação no caderno "regra aninhada"*/
+    width: 33px;
+}
+
+
+.links-list li a {
+    text-decoration: none;
+    color: rgb(12,15,14);
+    font-weight: bolder;
+}
+
+.links-list li {
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffffff;
+    padding: 20px;
+    margin: 10px 20px;
+    list-style: none;
+    background: #ffffff;
+}
+
+.links-list li a span {
+    display: block; /*elementos inline, não comportamento de bloco, ou seja, ele não poder ser editavel por um margin, padding e etc. por isso transformamos em display:blocl;.*/
+    color: grey;
+    margin-top:5px;
+}
