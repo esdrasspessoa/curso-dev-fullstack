@@ -1,0 +1,11 @@
+
+
+div {
+    width: 200px;
+    height: 200px;
+    background: green;
+    /*overflow: hidden;/*guarda tudo dentro da caixa(div)*/
+    overflow: scroll;/*guarda tudo dentro da caixa, mas podendo fazer scroll com o mause*/
+    /*overflow-x: hidden; /*esconde a barra de rolagem {eixo x e y} */
+    overflow: auto; /*ele entendo sozinho se vai precisar ou não colocar a barra de rolagem*/
+}

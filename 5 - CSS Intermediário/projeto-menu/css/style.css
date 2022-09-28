@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223, 222, 222); /*cor de fundo do bory*/
+    font-family: Arial, Helvetica, sans-serif; /*fonte do site*/
+}
+
+.header {
+    display: flex; /*para colocar os itens lado a lado*/
+    justify-content: space-between; /*espacamento entre eles*/
+    align-items: center; /*centralizar conforme o header*/
+    width: 100%;/*para ocupar a tela toda*/
+    height: 50px;/*altura do header*/
+    background-color: #000000;/*cor de fundo do header*/
+    box-shadow: 0 0 10px black; /*sombra do header*/
+    padding: 0 20px; /*espacamento interno*/
+}
+
+.logo {
+    color: white;/*cor da letra*/
+    text-transform: lowercase; /*parra deixar as letras em minusculo*/
+    letter-spacing: -3px; /*diminuir o espaçamento entre as 
+    letras*/
+}
+
+.logo span:first-child {
+    /*utilizei essa regra configurar o primeiro elemento span do h1*/
+    color:#1d52ff;
+}
+
+.logo span:last-child {
+    /*utilizei essa regra configurar o ultimo elemento span do h1*/
+    font-size: 12px;
+    letter-spacing: normal;
+}
+
+.menu {
+    display: flex; /*para colocar os itens lado a lado*/
+}
+
+.menu li {
+    list-style: none; /*para tirar os bullets points*/
+    position: relative; /*para que ele ficasse posicionado ao submenu, é necessario que a li, esteja com position:relative acionado*/
+}
+
+.menu li a { 
+    /*configurando a tag "a"*/
+    padding: 17px; /*usei esse padindo para que toda area do ancora seja clicavel*/
+    color: #Ffffff;
+    font-size: 14px; /*tamadno da letra*/
+    text-decoration: none;
+    display: block; /*para fazer com que o ancora empurra a li */ 
+}
+
+.menu li:hover{
+    /*utilizei essa pseudo-classe para mudar o estado da tag li toda vez que passar o mause em cima dela.*/
+    background-color: #1d52ff;
+}
+
+.menu li:hover > .submenu, 
+.submenu li:hover > .submenu {
+    /*utilizei essa regra poque ja temos um hover criado, mas só queremos mudar quem vai ser o outro elemento. no caso aqui é o submenu e para colocalo precimos selecionar o seletor ">".*/
+    display: block;
+}
+
+.submenu {
+    /*por padrão o submenu ele tem que estar oculto, pq ele só pode aparecer que o usuario passar o mause*/
+    display: none;
+    position: absolute; /*para ele ficar posicionado em relação ao submenu*/
+    top: 50.4px;
+    left: 0;
+    background: #1d52ff;
+    min-width: 110%; /*largura em relação ao pai, so que coloquei um pouco a mais */
+}
+
+.submenu li:hover {
+    background-color: #142f88;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li .submenu {
+    top:0;
+    left: 100%; /*posiconou o submenu console a 100% do left*/ 
+}

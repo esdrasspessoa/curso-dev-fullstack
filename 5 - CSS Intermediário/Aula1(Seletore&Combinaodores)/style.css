@@ -1,0 +1,32 @@
+.exemplo{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+.exemplo1 p.red {
+    color: red;
+}
+
+.exemplo2 > p {
+    color: blue;
+    /*aplica-se essa regra ">", para estilizar os "p" filho da classe "exemplo2"*/
+}
+
+h1,h2,h3 {
+    color:blue
+    /*é possivel aplicar a mesma regra a um ou mais seletores. OBS:FUNCIONA PRA CLASSES TAMBEM*/
+}
+
+.exemplo3 + p {
+    color: red;
+    /*como o seletor "+" é possivel pegar o primeiro elemento "p" irmão da class ".exemplos3". LEMBRAR: é so o irmão mais proximo, não se aplica aos outro.*/
+}
+
+.exemplo4 ~ p {
+    color: green;
+    /*com esse seletor "~" podemos pegar todos os "p" irmaõs da class .exemplo4*/
+}
+

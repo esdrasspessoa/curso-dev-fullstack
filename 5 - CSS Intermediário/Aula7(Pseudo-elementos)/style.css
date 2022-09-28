@@ -1,0 +1,42 @@
+
+/*Usamos o "::" para declarar um psedo elemento*/
+
+::selection{
+    /*esse seleter permite alterar a cor quando selecionamos o texto com o mouse*/
+    color:pink;
+    background: black;
+}
+
+p::first-line {
+    color:orange;
+    /*alterei a primeira linha do paragrafo*/
+}
+
+p::first-letter {
+    color: red;
+    font-size: 50px;
+    /*alterei a primeira-letra do paragrafo*/
+}
+
+h1::before {
+    /*essa regra aplica algum elemento antes*/
+    background-image: url(css3.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    content: "";
+    margin-right:5px;
+}
+
+h1::after {
+    /*essa regra aplica algum elemento depois*/
+    background-image: url(css3.png);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    content: "";
+    margin-left:5px;
+}
+

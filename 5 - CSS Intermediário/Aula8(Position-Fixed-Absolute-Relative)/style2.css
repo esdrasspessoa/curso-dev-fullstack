@@ -1,0 +1,18 @@
+.conteudo {
+    position: relative;
+    border: 1px solid black;
+    padding: 20px;
+    height: 500px;
+}
+
+.quadrado {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+/*O POSITION ABSOLUTE ELE É USADO QUANDO QUEREMOS POSICIONAR ALGO QUE NÃO SEJA NO BORY OU SEJA POSICIONAR ELE NUMA "DIV" COMO NO EXEMPLO ACIMA. O "QUADRADO" PULOU PRA FORA DO PAI DELE (QUE É O "CONTEUDO"). O OBJETIVO É QUE O "QUADRADO" FIQUE POSICIONADO EM RELAÇÃO "CONTEUDO" E NÃO POSICIONADO EM RELAÇÃO AO BORY. MAS PARA ISSO O "CONTEUDO" TEM QUE TA APLICADO A REGRA "POSITION:RELATIVE", APÓS ISSO O "QUADRADO" ESTARA DENTRO DA DIV "CONTEUDO"*/

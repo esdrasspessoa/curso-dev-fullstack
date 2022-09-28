@@ -1,0 +1,21 @@
+h1 {
+    text-shadow: 2px 2px 20px red;
+}
+
+p {
+    color:green;
+    text-align:justify; /*aliamento de texto*/
+    font-size: 30px;
+    font-weight: bold; /*expessura da fonte*/
+    font-style: italic;/*estilo da fonte*/
+    /*font-variant: small-caps;/*variação da fonte*/
+    text-transform:uppercase ;/*permite colocal tudo em maiusculo,minusculo ou deixar a primeira letra da(s) palavra(s) am maisculo.*/
+    text-indent:40px;/*adiciona um paragafro no inicio do texto*/
+    line-height: 50px;/*espaçamento entre linhas*/
+}
+
+a {
+    text-decoration:none; /*tem underlina, overline(linha em cima), line-throug(linha no meio)*/
+    letter-spacing: 10px; /*espaçamento entre letras*/
+    word-spacing: 20px; /*adciona espaçamento entre letras*/
+}

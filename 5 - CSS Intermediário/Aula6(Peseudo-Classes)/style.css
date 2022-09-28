@@ -1,0 +1,57 @@
+a {
+    color: red;
+}
+
+a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+a:hover + .caixa {
+    display: block;
+    /*este é um exemplo de como combinar classes utilizando o hover*/
+}
+
+a:visited {
+    color:yellow;
+}
+
+a:active {
+    color: pink;
+}
+
+.caixa {
+    display: none;/*acompahar regra "a" para ver o exemplo*/
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+
+.caixa:hover {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+/*first e last-child*/
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:last-child {
+    color: blue;
+}
+
+/*serve também para outras classes*/
+
+.exemplo p:first-child {
+    color: green;
+}
+
+/*tem como selecionar um elemento especifico*/
+
+.exemplo1 p:nth-child(5) {
+    color: blue;
+    /*no nth você SELECIONA o exato elemento que voc quer aplicar a regra*/
+}

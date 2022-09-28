@@ -1,0 +1,16 @@
+
+.a {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+ul{
+    background-color: gray;
+    padding: 20px;
+}
+
+ul li {
+    display: inline; /*para deixaos elementos em linha*/
+    margin: 20px;
+}
