@@ -1,0 +1,18 @@
+body{
+    margin:100px
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    transition: 500ms;
+    transform-origin: 20% 40%; /*posição de origem, no caso do exemplo, a origem da rotação*/
+}
+
+.box:hover {
+    background-color: red;
+    /*transform: translate(50px, 100px); /*empurra de acordo com as cordenadas. OBS: ESSE SÓ FLUTUA E NÃO OCUPA ESPAÇO.*/
+    transform: rotate(360deg) /*scale(2, 3); /*faz com o que o elemento gire, já o escale muda as dimensões do elemento (width (vezes mais), height (vezes mais)) PODEM SER USADOS SEPARADAMENTE*/
+    /*transform: skewX(50deg); /*distorce o elemento. PODEM SER USADOS JUNTOS*/
+}

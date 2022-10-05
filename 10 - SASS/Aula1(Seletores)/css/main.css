@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/*para criar suas variaveis basta colocar o "$" na frente e declara-la*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: sans-serif;
+}
+
+/*para criar suas variaveis basta colocar o "$" na frente e declara-la*/ /*tenho algumas formas de escrever eles */
+/* 1 - @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}*/
+/*os mixins aceita parametros, ou seja, é possivel mandar valores para ele por uma função*/
+/* 2 - @mixin reset-list($margin, $padding, $style) {
+    margin: $margin;
+    padding: $padding;
+    list-style: $style;
+}*/
+/*a partir dai, quem for chamar o reset list, tem que declarar os valores*/
+/*outra forma de escrever é quando não é declarado nenhum valor*/
+/*quando não for declarado nada, os valores que vão ficar vão ser os que estão setados*/
+/*EXPLICAÇÃO CONDICIONAL*/
+/*foi criado para extender os estilos de algo*/
+.container .box .danger, .container .box .warning, .container .box .success {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 2px black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.container .box {
+  width: 30%;
+  background-color: white;
+  color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  /*explicaçoes do uso das condicionais*/
+}
+.container .box.active { /* O "&" unir os irmaõs, quando se tem aquela regra aninhada*/
+  background-color: red;
+}
+.container .box h2 {
+  font-size: 22px;
+  /*com o sass é permitido escrever dessa forma, não é obrigatorio, só uma forma a mais*/
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 22px;
+}
+.container .box p {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.container .box p.hidden {
+  display: none;
+}
+.container .box ul {
+  /*1- @include reset-list*/
+  /* 2 - @include reset-list(100px, 10px, square);*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container .box a {
+  text-decoration: none;
+  color: black;
+}
+.container .box a:hover { /* o & é permitido para criar qualquer pseudo*/
+  color: yellow;
+}
+.container .box a:hover + p.hidden {
+  display: block;
+}
+.container .box .success {
+  /*background-color: green; poderiamos colocar as cores tudo aqui, mas para ficar mais profissional vamos utilizar esse conceito, usando o mixin e as condicionais*/
+  background-color: green;
+}
+.container .box .warning {
+  color: black;
+  background-color: yellow;
+}
+.container .box .danger {
+  background-color: red;
+}/*# sourceMappingURL=main.css.map */

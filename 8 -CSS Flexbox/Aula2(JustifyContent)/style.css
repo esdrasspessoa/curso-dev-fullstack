@@ -1,0 +1,34 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    /*JUSTIFY CONTENT
+    justify-content: flex-start;PADRÃO
+    justify-content: flex-end; permiti colocar os intens no final, sem inverter a ordem
+    justify-content: center;
+    justify-content: space-between; espaço entre eles*/
+
+    background-color: silver;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}

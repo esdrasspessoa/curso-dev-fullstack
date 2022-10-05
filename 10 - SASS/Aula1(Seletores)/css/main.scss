@@ -1,0 +1,81 @@
+@import "base";
+@import "variables";
+@import "mixins";
+@import "extends";
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+    .box {
+        width: 30%;
+        background-color: white;
+        color: $--color-primary;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+
+        &.active {/* O "&" unir os irmaõs, quando se tem aquela regra aninhada*/
+            background-color:red;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: { /*com o sass é permitido escrever dessa forma, não é obrigatorio, só uma forma a mais*/
+                top: 10px;
+                left: 20px;
+                right: 30px;
+                bottom: 22px;
+            }
+
+        }
+        
+        p {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 20px;
+            
+            &.hidden{
+                display: none;
+            }
+        }
+
+        ul {
+            /*1- @include reset-list*/
+            /* 2 - @include reset-list(100px, 10px, square);*/
+            @include reset-list()
+        }
+
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover { /* o & é permitido para criar qualquer pseudo*/
+                color: yellow;
+
+                & + p.hidden {
+                    display: block;
+                }
+            }
+
+        }
+        /*explicaçoes do uso das condicionais*/
+        .success {
+            @extend %box-alert;
+            /*background-color: green; poderiamos colocar as cores tudo aqui, mas para ficar mais profissional vamos utilizar esse conceito, usando o mixin e as condicionais*/
+            @include bg-effect(success);
+        }
+
+        .warning {
+            @extend %box-alert;
+            @include bg-effect(warning);
+        }
+
+        .danger {
+            @extend %box-alert;
+            @include bg-effect(danger);
+        }
+    }
+}

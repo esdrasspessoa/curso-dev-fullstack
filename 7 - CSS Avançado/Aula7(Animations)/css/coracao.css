@@ -1,0 +1,25 @@
+
+
+.coracao {
+    animation-name: coracaoBatendo;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+    animation-direction: alternate;
+
+}
+
+@keyframes coracaoBatendo {
+    0% {
+        width: 500px;
+
+    }
+
+    50% {
+
+    }
+
+    100% {
+        width: 525px;        
+    }
+}

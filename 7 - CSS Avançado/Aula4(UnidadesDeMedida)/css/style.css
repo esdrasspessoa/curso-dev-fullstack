@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    /*o vw e o vh são pra ocupar todo o espaço da tela*/
+    background-color: black;
+}
+
+.box2 {
+    width: 100vw;
+    height: 100vh;
+    /*o vw e o vh são pra ocupar todo o espaço da tela*/
+    background-color: rgb(218, 32, 32);
+}
+
+.pai {
+    font-size: 12px
+}
+
+.pai > p {
+    font-size: 5em;
+    /*valor relativo ao elemento pai*/
+}
+
+p {
+    font-size: 6rem;
+    /*valor relativo ai :root*/
+}

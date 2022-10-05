@@ -1,0 +1,42 @@
+
+body {
+    background-color: black;
+    color: #ffffff;
+}
+
+@media (max-width:400px) { /*com o media querie, é permitido alterar as regras do css, dependo do tamanho da widht*/
+    body {
+        background-color: red;
+        color: blue;
+    }
+
+    p {
+        font-size: 40px;
+    }
+
+    img {
+        width: 300px;
+    }
+}
+
+/*também é possivl utilizar para outros tamanhos */
+
+@media (min-width:401px) and (max-width:600px){/*ex utilizando o operador and*/
+    body {
+        background-color: green;
+        color: yellow;
+    }
+
+    img {
+        display: none;
+    }
+
+}  
+
+@media (min-width:601px) and (max-width:800px){
+    body {
+        background-color: blue;
+        color: white
+    }
+
+}

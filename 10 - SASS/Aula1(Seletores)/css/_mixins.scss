@@ -1,0 +1,47 @@
+/*tenho algumas formas de escrever eles */
+
+/* 1 - @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}*/
+
+
+/*os mixins aceita parametros, ou seja, é possivel mandar valores para ele por uma função*/
+
+/* 2 - @mixin reset-list($margin, $padding, $style) {
+    margin: $margin;
+    padding: $padding;
+    list-style: $style;
+}*/
+/*a partir dai, quem for chamar o reset list, tem que declarar os valores*/
+
+
+
+/*outra forma de escrever é quando não é declarado nenhum valor*/
+
+@mixin reset-list($margin:0, $padding:0, $style:none) {
+    margin: $margin;
+    padding: $padding;
+    list-style: $style;
+}
+/*quando não for declarado nada, os valores que vão ficar vão ser os que estão setados*/
+
+
+/*EXPLICAÇÃO CONDICIONAL*/
+
+@mixin bg-effect($effect) {
+    @if $effect == success {
+        background-color: green;
+    }
+    @else if $effect == warning { 
+        color: black; 
+        background-color: yellow;
+    }
+    @else if $effect == danger {
+        background-color: red;
+    }
+    @else {
+        background-color: black;
+    }
+}
